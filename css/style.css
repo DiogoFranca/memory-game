@@ -1,0 +1,67 @@
+html {
+  font-size: 65.2%;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 95rem;
+}
+
+.container .card {
+  position: relative;
+  background: linear-gradient(#3a0ca3, #480ca8, #560bad, #7209b7, #b5179e);
+  color: white;
+  height: 20rem;
+  width: 30rem;
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.3rem 0 #b5179e;
+}
+
+.container .card img {
+  position: absolute;
+  height: 20rem;
+  width: 30rem;
+  z-index: 999;
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.3rem 0 #b5179e;
+}
+
+.box-score .btn {
+  padding: 1rem;
+  background-color: #7209b7;
+  color: white;
+  border: none;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.5rem 0 #480ca8;
+}
+
+.box-score p {
+  font-weight: bold;
+}
+
+.box-score .score {
+  color: green;
+}
+
+.box-score .failed {
+  color: red;
+}
+
+.box-score .btn:hover {
+  background-color: #560bad;
+}
+
+.box-score .btn:active {
+  box-shadow: none;
+}
